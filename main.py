@@ -100,7 +100,7 @@ class MainHandler(webapp2.RequestHandler):
 
             maniksHouse.setMap(map);
             google.maps.event.addListener(maniksHouse, 'click', function() {
-              var contentString = "<b>Manik's House.</b><br>This is the location of Manik's house in London.";              
+              var contentString = "<b>Manik's House.</b><br>This is the location of Manik's house in London.<br><br>";              
               infoWindow = new google.maps.InfoWindow({
                 content: contentString
               });
